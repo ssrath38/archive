@@ -5,33 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="App.js"></script>
   <title>Assignment1</title>
 </head>
 
 <body>
   <div id="root"></div>
-
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script>
-    const heading = React.createElement(
-      "h2",
-      { id: "head2", key: "1" },
-      "Subhransu"
-    );
-    const para = React.createElement(
-      "p",
-      { id: "p1", key: "2" },
-      "Subhransu Sekhar rath"
-    );
-    const container = React.createElement("div", { id: "container" }, [
-      heading,
-      para
-    ]);
-
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(container);
-  </script>
 </body>
 
 </html>
