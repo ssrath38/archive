@@ -15,7 +15,8 @@ import userRoutes from "./routes/userRoutes.js";
 
 const app = express();
 const corsOptions = {
-  origin: 'https://bazaar-gupj.vercel.app/'
+ origin: 'https://bazaar-gupj.vercel.app', 
+  optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions))
