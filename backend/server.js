@@ -14,9 +14,12 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 
 const app = express();
-app.use(express.json());
-app.use(cors())
+const corsOptions = {
+  origin: 'https://bazaar-gupj.vercel.app/'
+};
 
+app.use(cors(corsOptions))
+app.use(express.json());
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
