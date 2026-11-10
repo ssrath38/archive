@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints
+
+# Virtual Envs
+.venv/
+venv/
+
+# Data and GIS outputs
+data/
+gis/
+
+# IDE/Editor files (optional)
+.vscode/
+.idea/
