@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #0e5e6f, #fff);
+  background-repeat: no-repeat;
+}
+h2 {
+  margin: 30px 0;
+  color: #fff;
+  font-size: 2rem;
+}
+#board {
+  width: 500px;
+  height: 500px;
+  background-color: #ffefd6;
+  border: 6px solid #ad8e70;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.tile {
+  border: 5px solid #ad8e70;
+  /* border-radius: 20px; */
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.t2 {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.t4 {
+  background-color: rgb(0, 255, 255);
+  color: black;
+}
+.t8 {
+  background-color: rgb(102, 255, 135);
+  color: black;
+}
+.t16 {
+  background-color: rgb(238, 255, 87);
+  color: black;
+}
+.t32 {
+  background-color: rgb(0, 46, 46);
+  color: rgb(255, 255, 255);
+}
+.t64 {
+  background-color: rgb(255, 167, 167);
+  color: black;
+}
+.t128 {
+  background-color: rgb(151, 144, 255);
+  color: black;
+}
+.t256 {
+  background-color: rgb(4, 53, 12);
+  color: rgb(255, 255, 255);
+}
+.t512 {
+  background-color: rgb(22, 5, 49);
+  color: rgb(255, 255, 255);
+}
+.t1024 {
+  background-color: rgb(120, 122, 0);
+  color: rgb(255, 255, 255);
+}
+.t2048 {
+  background-color: rgb(0, 1, 46);
+  color: rgb(255, 255, 255);
+}
+.t4096 {
+  background-color: rgb(59, 30, 6);
+  color: rgb(255, 255, 255);
+}
+.t8192 {
+  background-color: rgb(59, 30, 6);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 550px) {
+  #board {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 400px) {
+  #board {
+    width: 290px;
+    height: 290px;
+  }
+}
