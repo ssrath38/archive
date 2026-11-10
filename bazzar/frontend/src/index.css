@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ownred: #ea2e0e;
+}
+
+@layer utilities {
+  .scrollbar {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Subtle thumb, transparent track */
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 8px; /* Slimmer scrollbar */
+    height: 8px; /* Slim horizontal scrollbar */
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Fully transparent track */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3); /* Subtle dark thumb */
+    border-radius: 10px; /* Smooth rounded corners */
+    transition: background 0.3s ease; /* Smooth color transition on hover */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6); /* Darker on hover for better feedback */
+  }
+
+  /* Hide scrollbar when not scrolling */
+  .scrollbar:where(:not(:hover))::-webkit-scrollbar {
+    background: transparent;
+  }
+}
+
+#root {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
